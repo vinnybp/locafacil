@@ -5,14 +5,6 @@
 #include <stdbool.h>
 #include <string.h>
 
-//FUNÇÃO DE DELAY, SIMILAR AO SLEEP DO WINDOWS
-void delay(int segundos)
-{
-    int mili_segundos = 1000 * segundos;
-    clock_t start_time = clock();
-    while (clock() < start_time + mili_segundos);
-}
-
 //FUNÇÃO PARA MOSTRAR SAUDAÇÃO PERSONALIZADA DE ACORDO COM A HORA
 char *msgSaudacao(int hora) {
 
